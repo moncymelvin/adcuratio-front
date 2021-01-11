@@ -1,0 +1,26 @@
+.nav  .nav-link {
+    color: black;
+}
+.navbar-nav .nav-item.active .nav-link,
+
+ .nav-link:hover {
+    color: red;
+}
+
+.nav-link.active {
+    color: red;
+    background-color:rgba(255, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.hardlight{
+    
+    background-color: #eef1f8;
+}
+
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+    background: red;
+}
