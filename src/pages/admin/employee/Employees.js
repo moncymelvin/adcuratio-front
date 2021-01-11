@@ -22,6 +22,7 @@ const Employees = () => {
     });
 
   const showEmp = () => (
+    <div className="table-responsive">
     <table className="table table-bordered ">
       <thead className="thead-light">
         <tr>
@@ -49,6 +50,7 @@ const Employees = () => {
         ))}
       </tbody>
     </table>
+    </div>
   );
 
   return (
