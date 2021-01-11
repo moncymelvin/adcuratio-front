@@ -30,7 +30,7 @@ const Employees = () => {
           <th scope="col">Age</th>
           <th scope="col">Gender</th>
           <th scope="col">E-mail</th>
-          <th scope="col">Phonee No</th>
+          <th scope="col">Phone No</th>
         </tr>
       </thead>
 
@@ -66,7 +66,7 @@ const Employees = () => {
                 {loading ? (
                   <h4 className="text-danger">Loading..</h4>
                 ) : (
-                  <h4 className="font-weight-bold">All Employee</h4>
+                  <h4 className="font-weight-bold">All Employees</h4>
                 )}
 
                 {showEmp()}
