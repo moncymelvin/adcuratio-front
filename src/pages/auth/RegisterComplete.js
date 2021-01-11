@@ -105,7 +105,7 @@ const RegisterComplete = ({ history }) => {
           .catch((err) => console.log(err));
 
         // redirect
-        history.push("admin/employees");
+        history.push("/admin/employees");
       }
     } catch (error) {
       console.log(error);
@@ -121,8 +121,8 @@ const RegisterComplete = ({ history }) => {
   <div className="form-group row">
   
     <div className="col-sm-10">
-    <div class="input-group pr-4">
-      <input type="text" readonly className="form-control py-2 border-right-0 border" id="staticEmail" value={email}/>
+    <div className="input-group pr-4">
+      <input type="text" readOnly className="form-control py-2 border-right-0 border" id="staticEmail" value={email}/>
       </div></div>
   </div>
   <div className="form-group row">
@@ -130,12 +130,12 @@ const RegisterComplete = ({ history }) => {
     <div className="col-sm-10 ">
   
 
-    <div class="input-group pr-4">
-    <input class="form-control py-2 border-right-0 border" type={passwordShown ? "text" : "password"} value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} autoFocus
+    <div className="input-group pr-4">
+    <input className="form-control py-2 border-right-0 border" type={passwordShown ? "text" : "password"} value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} autoFocus
       />
-    <span class="input-group-append">
-        <button class="btn btn-outline-secondary border-left-0 border" type="button" onClick={togglePasswordVisiblity}>
-            <i class="fa fa-eye password-icon" />
+    <span className="input-group-append">
+        <button className="btn btn-outline-secondary border-left-0 border" type="button" onClick={togglePasswordVisiblity}>
+            <i className="fa fa-eye password-icon" />
         </button>
     </span>
 </div>
@@ -158,23 +158,6 @@ const RegisterComplete = ({ history }) => {
 
 
 
-
-// <form onSubmit={handleSubmit}>
-// <input type="email" className="form-control" value={email} disabled />
-
-// <input
-//   type="password"
-//   className="form-control"
-//   value={password}
-//   onChange={(e) => setPassword(e.target.value)}
-//   placeholder="Password"
-//   autoFocus
-// />
-// <br />
-// <button type="submit" className="btn btn-raised">
-//   Complete Registration
-// </button>
-// </form>
 
 
   

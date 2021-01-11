@@ -58,13 +58,13 @@ const EmployeeCreate = ({ history }) => {
           <AdminNav />
         </div>
         <div className=" hardlight col">
-          <div class="row p-4  ">
-            <div class=" container bg-white rounded">
-              <div class="container p-3 w-80  ">
+          <div className="row p-4  ">
+            <div className=" container bg-white rounded">
+              <div className="container p-3 w-80  ">
                 {loading ? (
                   <h4 className="text-danger">Loading..</h4>
                 ) : (
-                  <h4 class="font-weight-bold">Add Employee</h4>
+                  <h4 className="font-weight-bold">Add Employee</h4>
                 )}
 
                 <EmployeeForm
